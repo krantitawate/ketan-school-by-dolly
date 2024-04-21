@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:  @100......900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none; 
+    font-family: "Cartamaran",sans-serif;
+}
+/* Universal css start */
+ .text-orange{color: #ea512e;}
+ .text-black{color: #1b0238;}
+ .text-silver{color: #6b6b84;}
+ .bg-light-orange{background: #fdf6ed;}
+ .bg-orange{background: #ea512e;}
+ .bg-light-yellow{background: #fee9ca;}
+ .bg-yellow{background: #f5890d !important;}
+ .mt-10{margin-top: 100px;}
+ .mt-15{margin-top: 150px;}
+ .mt-20{margin-top: 200px;}
+ .pb-70{padding-bottom: 70px;}
+ .pt-100{padding-top:100px;}
+ .pb-100{padding-bottom:100px;}
+ .btn{
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transform: 0.5s ease;
+    position: relative;
+    background-color: #ea512e;
+ }
+ .btn:hover{
+    color: #fff;
+    background: #f5890d;
+ }
+ p {
+margin-bottom: 15px;
+line-height: 1.8;
+color: #6b6b84;
+font-weight: 400;
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+ }
+ .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+   color: #1b0238;
+   font-family: "Catamaran", sans-serif;
+   font-weight: bold;
+ }
+ img{
+   display: inline-block;
+   max-width: 100%;
+   height: auto;
+ }
+/* Universal css end */
+
+/* Nav section Start */
+a.active{
+   color: #ea512e !important;
+}
+.nav-link:hover,
+.dropdown-item:hover{
+   color: #ea512e !important;
+   transition: 0.5s;
+}
+.dropdown-menu{
+   width: 280px;
+   border: none;
+   border-radius: 0px;
+   transition: all 4s ease-in-out;
+   box-shadow: 0px 0px 2px 2px #ccc;
+}
+.dropdown:hover .dropdown-menu{
+   display: block;
+}
+/* Nav section End */
+
+/* Banner Section Start */
+.banner{
+   width: 100%;
+   height: 700px;
+   background: url(../img/main-banner-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+}
+.shape-1{
+   top: 3.5%;
+   left: .7%;
+   animation: move 2s linear alternate infinite;
+}
+.shape-2{
+   top:  3.5%; 
+   left: 50%;
+   animation: move2 2s linear alternate infinite;
+ }
+.shape-3{
+      top: 61%;
+      left: .7%;
+      z-index: 9;
+      animation: move 2s linear alternate infinite;
+}
+.banner h1{
+   font-size: 60px;
+   margin-top: 20px;
+   color: #1b0238;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+/* Banner Section End */
+
+/* Who we are section start */
+.who_we span,
+.popular span,
+.teacher span,
+.core-value span,
+.testimonial span{
+   font-weight: 600;
+   font-size: 20px;
+   color: #ea512e;
+   font-family: "Sacramento", cursive;
+}
+.who_we h3,
+.popular h3,
+.teacher h3,
+.core-value h3,
+.testimonial h3{
+   font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.who_we .image{
+   text-align: center;
+   position: relative;
+   z-index: 1;
+}
+.who_we .image::before{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: #ea512e;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: -1;
+   border-radius: 50%;
+   transition: 0.5s;
+   animation:  border-transform-default 10s linear infinite alternate forwards;
+   
+}
+.who_we .image img{
+   border-radius: 50%;
+   padding: 20px;
+}
+.who_we .image::after{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: #f5890d;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: -1;
+   border-radius: 50%;
+   transition: 0.5s;
+   animation:  border-transform-default 30s linear infinite alternate forwards;
+}
+
+.who_we ul li{
+   line-height: 40px;
+   font-weight: bold;
+   font-size: 16px;
+}
+.who_we ul li span{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #ea512e;
+   display: inline-block;
+   font-size: 14px;
+   color: #fff;
+   text-align: center;
+   line-height: 30px;
+   margin-right: 6px;
+   transition: all 0.5s;
+   font-family: "Cartamaran", sans-serif;
+}
+.who_we ul li:hover span{
+   background: #f5890d;
+   transition: all 1s ease-in;
+}
+/* Who we are section end */
+
+/*Popular class section start */
+.popular .card:hover img{
+  /* transform: scale(1.07); */
+   transform: rotate(2deg)scale(1.07);
+   
+   transition: all 0.3s linear;
+}
+/*Popular class section end */
+
+
+/* core value section start */
+.core-value .number{
+   width: 60px;
+   height: 60px;
+   line-height: 55px;
+   text-align: center;
+   border-radius: 50%;
+   display: inline-block;
+   margin-top: 1.5%;
+   margin-right: 20px;
+   font-size: 25px;
+   color: #1b0238;
+   border: 3px solid #fff;
+   outline: 1px solid #e5e4e4;
+   outline-offset: 2px;
+   transition: 0.5s;
+   cursor: pointer;
+   font-family: "Cartamaran", sans-serif;
+}
+.core-value .number:hover{
+   color: #fff;
+   transition: 0.5s;
+   background: #ea512e !important;
+   outline-color: #ea512e;
+}
+/* core value section end */
+
+
+/* Teacher Section Start */ 
+  .teacher .social-media{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -70px;
+   transition: all 0.5s ease-in;
+  }
+  .teacher .teacher-image:hover .social-media{
+   margin-bottom: 0px;
+   transition: all 0.5s ease-out;
+  }
+  .teacher .social-media li{
+   width: 30px;
+   height: 30px;
+   line-height: 32px;
+   background: #ea512e;
+   border-radius: 50%;
+  }
+  .teacher .social-media li a{
+   color: #fff;
+  }
+  .teacher .social-media li:hover{
+   background: #f5890d;
+   transition: 0.3s ease;
+  }
+/* /Teacher Section End */
+
+/* Testimonial Section Start */
+.card.teacher{
+   height: auto;
+   padding: 30px;
+   text-align: center;
+   border-radius: 49%;
+   border: none;
+   background-color: #fee9ca;
+}
+.card.teacher div{
+   width: 65px;
+   height: auto;
+   line-height: 75px;
+   border-radius: 50%;
+   background: #fff;
+   margin: auto;
+   transition: all 0.3s linear;
+   margin-bottom: 10px;
+
+}
+.card.teacher:hover div{
+   background: #ea512e;
+   transition: all 0.3s linear;
+}
+.card.teacher:hover div .fa-quote-left{
+   color: #fff !important;
+   transition: all 0.3s linear;
+}
+   .testimonial .nav-button button{
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 10px;
+      text-align: center;
+      border-radius: 50%;
+      background: #ea512e;
+      transition: 0.3s linear;
+      margin-left: -40px;
+      margin-right: -40px;
+   }
+   .testimonial .nav-button button:hover{
+      background: #f5890d;
+      transition: 0.3s linear;
+   }
+/* /Testimonial Section End */
+
+/* Animation Section Start */
+
+div.rotate2{
+   position: fixed;
+   top: 50%;
+   right: 20px;
+   margin-top: 10px;
+   width: 100px;
+   height: 50px;
+   border-radius: 20px;
+   background-color: greenyellow;
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+   animation: rotate2 2s linear infinite alternate;
+}
+/* Animation Section End */
+
+
+@keyframes rotate2 {
+   0%{
+      transform: scale3d(1, 1, 1);
+   }
+   50%{
+      transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -3deg);;
+   }
+   100%{
+      transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 3deg);;
+   }
+} 
+
+@keyframes move {
+   0%{}
+   100%{left: 3%;}
+}
+@keyframes move2 {
+   0%{}
+   100%{left: 52.2%;}
+}
+
+@keyframes border-transform-default{
+   0%, 100%{
+      border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+   }
+   14%{
+      border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+   }
+   28%{
+      border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+   }
+   42%{
+      border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+   }
+   56%{
+      border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+   }
+   70%{
+      border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+   }
+   84%{
+      border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+   }
+}
