@@ -131,12 +131,12 @@ a.active{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.who_we .image{
+.who .image{
    text-align: center;
    position: relative;
    z-index: 1;
 }
-.who_we .image::before{
+.who .image::before{
    content: "";
    position: absolute;
    height: 100%;
@@ -151,11 +151,11 @@ a.active{
    animation:  border-transform-default 10s linear infinite alternate forwards;
    
 }
-.who_we .image img{
+.who .image img{
    border-radius: 50%;
    padding: 20px;
 }
-.who_we .image::after{
+.who .image::after{
    content: "";
    position: absolute;
    height: 100%;
